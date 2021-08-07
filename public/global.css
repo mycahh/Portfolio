@@ -1,0 +1,98 @@
+:root {
+	--primary: #12747D;
+	--secondary: #14D850;
+	--gray600: #F2F2F2;
+	--gray900: #18191F;
+	--background: #F4F5F7;
+	--purple: #8C30F5;
+	--purple-hover: #6e0adf;
+	--transparent: #FFFFFF00;
+	--form-label: #6F7482;
+
+	--height-nav: 4.5rem;
+}
+
+body {
+	box-sizing: border-box;
+	font-family: 'Inter', serif;
+	background-color: var(--background);
+}
+
+body, h1, h2, h3, h4, h5 {
+	margin: 0;
+    padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+p {
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+span {
+	font-size: 15px;
+}
+
+section {
+	box-sizing: border-box;
+}
+
+h2 {
+	font-size: 3em;
+}
+
+h3 {
+	font-size: 2.5em;
+}
+
+h5 {
+	font-size: 1.5em;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 12px;
+	border-radius: 6px;
+	transition: .3s ease all;
+}
+
+.btn-primary{
+	background-color: var(--purple);
+	color: var(--gray600);
+}
+
+.btn-primary:hover {
+	background-color: var(--purple-hover);
+}
+
+.btn-secondary {
+	background-color: var(--transparent);
+    color: var(--purple);
+    border: 1px solid var(--purple);
+}
+
+.btn-secondary:hover {
+	background-color: var(--purple);
+    color: var(--gray600);
+}
+
+@media (min-width: 1024px) {
+	p {
+		line-height: 1.9rem;
+	}
+
+	body {
+		font-size: 16px;
+	}
+}
