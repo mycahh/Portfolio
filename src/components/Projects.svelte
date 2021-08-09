@@ -1,4 +1,4 @@
-<section>
+<section id="projects">
     <h3>Projects</h3>
     <div class="projects-grid" >
         <slot></slot>

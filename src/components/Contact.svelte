@@ -1,4 +1,4 @@
-<section>
+<section id="contact">
     <h3>Contact</h3>
     <form>
         <div class="form-group">

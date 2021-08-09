@@ -12,6 +12,10 @@
 	--height-nav: 4.5rem;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	box-sizing: border-box;
 	font-family: 'Inter', serif;

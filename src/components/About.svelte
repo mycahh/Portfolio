@@ -1,4 +1,4 @@
-<section>
+<section id="about">
     <article>
         <div>
             <h3>About me</h3>
