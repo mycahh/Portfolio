@@ -1,36 +1,26 @@
 <script>
 
     let fixed = false
-    let handleMove = () => {}
+    let isOpen = false
+    let y = window.scrollY
 
-    function DOMContentLoaded() {
-        const Nav = document.querySelector('#navbar-container')
-
-        handleMove = () => {
-        if(window.scrollY > 72) {
-            Nav.classList.add('fixed-navbar')
-            isSticky = true
-
-        } else {
-            Nav.classList.remove('fixed-navbar')
-            isSticky = false
-            }
-        }
+    $: {
+        fixed = y > 72 ? true : false
     }
 
-    window.addEventListener('DOMContentLoaded', DOMContentLoaded)
+    const handleClick = () => isOpen = !isOpen
+
 
 </script>
 
-<svelte:window on:mousemove={handleMove}/>
+<svelte:window bind:scrollY={y} />
 
-
-<div class={fixed ? 'fixed-navbar': ''} id="navbar-container">
-    <nav >
+<div class={fixed ? 'fixed-navbar': ''}>
+    <nav>
         <img src="/img/Logo.svg" alt="logo site" />
         <div>
-            <img src="/img/Menu.svg" alt="Menu site" class="menu-burger"/>
-            <ul>
+            <img src="/img/Menu.svg" alt="Menu site" class="menu-burger" on:click={handleClick} />
+            <ul class={isOpen ? 'show-menu' : ''}>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -54,12 +44,13 @@
         width: 90%;
         height: var(--height-nav);
         z-index: 10;
+
+        transition: .3s all ease;
     }
 
     ul {
         display: none;
         font-weight: 500;
-        gap: 2rem;
     }
 
     li {
@@ -70,15 +61,16 @@
         display: block;
         height: 22px;
     }
-
     @media(min-width: 64rem) {
         .menu-burger {
             display: none;
         }
 
         ul {
-            display: flex;
+            gap: 2rem;
+            display:flex;
         }
+
     }
 
     nav::before {
@@ -99,4 +91,25 @@
     .fixed-navbar nav {
         height: 55px;
     }
+
+    nav > div {
+        position: relative;
+    }
+
+    @media(max-width: 1024px) {
+        .show-menu {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        top: 30px;
+        right: 0;
+        background-color: var(--primary);
+        box-sizing: border-box;
+    }
+
+    .show-menu li {
+        padding: .5rem 2rem;
+    }
+    }
+
 </style>
