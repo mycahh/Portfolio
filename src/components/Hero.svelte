@@ -6,11 +6,11 @@
         <h2>Web Developer</h2>
         <p>Welcome, I’m Mikael Fernandez, a developer who likes to try new technologies and experiment.</p>
         <div class="buttons">
-            <a href="https://github.com" class="btn btn-primary" >
+            <a href="https://github.com/mycahh" class="btn btn-primary" >
                 <img src="/img/github.svg" alt="github icon"/>
                 <span>Github</span>
             </a>
-            <a href="https://linkedin.com" class="btn btn-primary" >
+            <a href="https://www.linkedin.com/in/mikael-fernandez-067632219/" class="btn btn-primary" >
                 <img src="/img/linkedin.svg" alt="linkedin icon"/>
                 <span>Linkedin</span>
             </a>

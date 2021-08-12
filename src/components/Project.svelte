@@ -7,8 +7,8 @@
         <h5>Weather App</h5>
         <p>A weather application that allows you to view the current weather and get a forecast for the next few days.</p>
         <div class="projects-buttons">
-            <a href="." class="btn btn-primary">Demo</a>
-            <a href="." class="btn btn-secondary">Source</a>
+            <a href="https://weatherwav.netlify.app/" class="btn btn-primary" target="_blank">Demo</a>
+            <a href="https://github.com/mycahh/WeatherApp" class="btn btn-secondary" target="_blank">Source</a>
         </div>
     </div>
     <figure class="img-project">

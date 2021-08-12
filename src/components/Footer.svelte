@@ -2,10 +2,14 @@
     <p>Mikael Fernandez</p>
     <div>
         <figure>
-            <img src="img/github.svg" alt="github icon"/>
+            <a href="https://github.com/mycahh" target="_blank">
+                <img src="img/github.svg" alt="github icon"/>
+            </a>
         </figure>
         <figure>
-            <img src="img/linkedin.svg" alt="linkedin icon" />
+            <a href="https://www.linkedin.com/in/mikael-fernandez-067632219/" target="_blank">
+                <img src="img/linkedin.svg" alt="linkedin icon" />
+            </a>
         </figure>
     </div>
 </footer>

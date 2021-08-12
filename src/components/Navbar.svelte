@@ -4,10 +4,7 @@
     let isOpen = false
     let y = window.scrollY
 
-    $: {
-        fixed = y > 72 ? true : false
-    }
-
+    $: fixed = y > 72 ? true : false
     const handleClick = () => isOpen = !isOpen
 
 
